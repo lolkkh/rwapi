@@ -1,0 +1,22 @@
+services:
+  - type: web
+    name: rozgar-node-api
+    env: node
+    plan: free
+    buildCommand: npm install
+    startCommand: node server.js
+    autoDeploy: true
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: PORT
+        value: 3000
+      # Optional: Override these from Render dashboard if needed
+      # - key: MASTER_TOKEN
+      #   value: your_jwt_token_here
+      # - key: MASTER_USERID
+      #   value: your_user_id
+      # - key: AES_KEY
+      #   value: your_aes_key
+      # - key: AES_IV
+      #   value: your_aes_iv
