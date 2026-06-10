@@ -34,8 +34,9 @@ const PORT = process.env.PORT || 3000;
 // ────────────────────────────────────────────────────────────────
 const CONFIG = {
   API_BASE:     process.env.API_BASE     || 'https://rozgarapinew.teachx.in',
-  MASTER_TOKEN: process.env.MASTER_TOKEN || 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjUxNTU0MyIsInRpbWVzdGFtcCI6MTc3ODYwNzkzMywiaXZfdmVyIjoxNDMsInNlc3Npb24iOiJleUowZVhBaU9pSktWMVFpTENKaGJHY2lPaUpJVXpJMU5pSjkuZXlKcFpDSTZJalV4TlRVME15SXNJbVZ0WVdsc0lqb2ljMkYxY21GaWFHdDFiV0Z5YTJoelFHZHRZV2xzTG1OdmJTSXNJbTVoYldVaU9pSlRRVlZTUVVKSUlGTklRVkpOUVNJc0luUmxibUZ1ZEZSNWNHVWlPaUoxYzJWeUlpd2lkR1Z1WVc1MFRtRnRaU0k2SW5KdmVtZGhjbDlrWWlJc0luUmxibUZ1ZEVsa0lqb2lJaXdpWkdsemNHOXpZV0pzWlNJNlptRnNjMlY5LmFMemFjc1VlZUUwbG1iR1l1bVJKZEE4cVdIYjlGQlUySDI2VDF3NG1KTE0ifQ.2hG6yHmPCOZ4jVmcbrdiDad_M_lXbR0Qs4PYOyDKVzo',
-  MASTER_USERID: process.env.MASTER_USERID || '515543',
+  MASTER_TOKEN: process.env.MASTER_TOKEN || '
+eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjQzMDAyNTUiLCJ0aW1lc3RhbXAiOjE3NzcwMTkwMTMsIml2X3ZlciI6MTksInNlc3Npb24iOiJleUowZVhBaU9pSktWMVFpTENKaGJHY2lPaUpJVXpJMU5pSjkuZXlKcFpDSTZJalF6TURBeU5UVWlMQ0psYldGcGJDSTZJbk5uTkRZek5UYzRRR2R0WVdsc0xtTnZiU0lzSW01aGJXVWlPaUpUYUdsMllXMGdSM1Z3ZEdFaUxDSjBaVzVoYm5SVWVYQmxJam9pZFhObGNpSXNJblJsYm1GdWRFNWhiV1VpT2lKeWIzcG5ZWEpmWkdJaUxDSjBaVzVoYm5SSlpDSTZJaUlzSW1ScGMzQnZjMkZpYkdVaU9tWmhiSE5sZlEuMkhiZE81d1hLNE5rZkt6RUVrczZBZHRRakxPalc0MXBubW5TeF9lZEc2NCJ9.8j1-FFb1n2Bqp4ZG61VwtMnkDDLQZUg3Hus4tlSNOAo',
+  MASTER_USERID: process.env.MASTER_USERID || '4300255',
   AES_KEY:      process.env.AES_KEY       || '638udh3829162018',
   AES_IV:       process.env.AES_IV        || 'fedcba9876543210',
   PLAYER_BASE:  'https://mute-butterfly-7f12.techdesh5.workers.dev/player?url=',
