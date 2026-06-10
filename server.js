@@ -397,21 +397,25 @@ app.get('/api/video', async (req, res) => {
     return res.json({ ok: true, type: 'youtube', url: 'https://www.youtube.com/watch?v=' + encodeURIComponent(yt) });
   }
 
-  // ── Direct download_link (AES encrypted) — raw URL, no external player
+  // ── Direct download_link (AES encrypted) — routed via Lucifer bypass
   if (d.download_link) {
     let u = decryptAppx(d.download_link);
     if (q !== 'auto') u = u.replace(/(1080p|720p|480p|360p|240p)/, q);
-    return res.json({ ok: true, type: 'hls', url: u });
+    
+    // ✅ YAHAN URL CHANGE KIYA HAI
+    return res.json({ ok: true, type: 'hls', url: 'https://luciferbypass.mrlucifer.workers.dev/?stream=' + u });
   }
 
-  // ── encrypted_links array — raw URL, no external player
+  // ── encrypted_links array — routed via Lucifer bypass
   const lnks = d.encrypted_links || [];
   for (const lnk of lnks) {
     if (lnk.path) {
       let u = decryptAppx(lnk.path);
       if (u) {
         if (q !== 'auto') u = u.replace(/(1080p|720p|480p|360p|240p)/, q);
-        return res.json({ ok: true, type: 'hls', url: u });
+        
+        // ✅ YAHAN URL CHANGE KIYA HAI
+        return res.json({ ok: true, type: 'hls', url: 'https://luciferbypass.mrlucifer.workers.dev/?stream=' + u });
       }
     }
   }
